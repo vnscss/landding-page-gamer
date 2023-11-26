@@ -33,12 +33,12 @@ body::-webkit-scrollbar {
     background-color: rgb(28, 29, 33);
   }
 
-.header{
+  .header{
     grid-area: header;
     background: rgb(49,11,84);
     background: linear-gradient(90deg, rgba(49,11,84,1) 0%, rgba(112,18,201,1) 83%);
     display: grid;
-    grid-template-columns: 840px 80px 80px 100px;
+    grid-template-columns: auto 80px 80px 100px 15%;
     column-gap: 25px;
     align-items: center;
 }
@@ -54,6 +54,7 @@ body::-webkit-scrollbar {
     padding-top: 13px;
     text-decoration: none;
 }
+
 
 .header a:hover{
     transform: scale(1.1);
