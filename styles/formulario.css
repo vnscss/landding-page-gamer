@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'app';
+    grid-template-rows: 15vh 85vh;
+    grid-template-columns: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    row-gap: 40px   ;
+    background-color: #222222;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;
+             /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #222222;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(20, 20, 24);   /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: none; /* creates padding around scroll thumb */
+  }
+
+  body::-webkit-scrollbar-corner{
+    background-color: rgb(28, 29, 33);
+  }
+
+.header{
+    grid-area: header;
+    background: rgb(49,11,84);
+    background: linear-gradient(90deg, rgba(49,11,84,1) 0%, rgba(112,18,201,1) 83%);
+    display: grid;
+    grid-template-columns: 840px 80px 80px 100px;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.header a{
+    border: none;
+    background-color: #222222;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    transition: 300ms;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+}
+
+.header a:hover{
+    transform: scale(1.1);
+}
+
+.headerTxt{
+    width: 270px;
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.headerTxt span img {
+    width: 35px;
+    margin-left: 8px;
+    fill: white;
+}
+
+.headerTxt span{
+    border-radius: 50%;
+}
+
+.app{
+    grid-area: app;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+div.form{
+    margin-top: 40px;
+    width: 400px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 10px;
+}
+
+form{
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+    'login inputL inputL'
+    'senha inputS check';
+    gap: 14px   ;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 100px 200px 30px;
+    margin: 10px;
+}
+
+
+.login{
+    grid-area: login;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.senha{
+    grid-area: senha;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputTxt{
+    grid-area: inputL;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    outline: 2px solid rgba(128, 0, 128, 0.651);
+    color: white;
+}
+
+.password{
+    grid-area: inputS;
+    border: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    outline: 2px solid rgba(128, 0, 128, 0.651);
+}
+
+.checkbox{
+    grid-area: check;
+}
+
+.checkbox :checked{
+    background: url("3565505-200.png");
+} 
+
+form button{
+    justify-content: center;
+    border: none;
+    background-color: #222222;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+
+form button:hover{
+    transform: scale(1.1);
+}
+
+img.linus{
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 5px 40px;
+}

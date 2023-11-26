@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view-source</title>
+    <link rel="shortcut icon" href="assets/1049443.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/view-.css">
+</head>
+<body>
+    <div class="header">
+        <p class="headerTxt"><span><img src="assets\1294077.svg"></span> Gamers irados</p>
+
+        <a class="homeButton" href="\index.html"> Home</a>
+        <a class="jButton" href="formulario.html"> Juntar-se</a>
+        <a class="sButton" href=""> Source-code</a>
+    </div>
+    <div class="container">
+        <div id="container">
+            <barra id="barra">
+                <div id="botoes">
+                <!--Botões chamando as funções para alterar o .src do iframe-->
+                <button id="html" onclick="btnHtml();">Html</button> <button id="css" onclick="btnCss();">Css</button> <button id="js" onclick="btnJs();">Js</button>
+                </div> 
+             </barra>
+             <div id="view-source-frame">
+            <!--Iframe exibindo o view-html, view-css ou view-js-->
+                 <iframe id="iframe" src="view-source/view-html.html" width="1000px" height="500px"></iframe>
+            </div>
+    </div>
+</div>
+    <script>
+          //Script que altera o .src do iframe acima
+          function btnHtml() {
+            document.getElementById("iframe").src = "view-source/view-html.html";
+        }
+          function btnCss() {
+            document.getElementById("iframe").src = "view-source/view-css.html";
+        }
+          function btnJs() {
+            document.getElementById("iframe").src = "view-source/view-js.html";
+        }
+    </script>
+</body>
+</html>

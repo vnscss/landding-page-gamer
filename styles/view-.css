@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #222;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'resto';
+    overflow: hidden;
+}
+
+.container{
+    grid-area: resto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+div#container{
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 29, 33);
+    width: 1000px;
+    height: 500px;
+}
+
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: header;
+    background: rgb(49,11,84);
+    background: linear-gradient(90deg, rgba(49,11,84,1) 0%, rgba(112,18,201,1) 83%);
+    display: grid;
+    grid-template-columns: 840px 80px 80px 100px;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.header a{
+    border: none;
+    background-color: #222222;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    transition: 300ms;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+}
+
+.header a:hover{
+    transform: scale(1.1);
+}
+
+.headerTxt{
+    width: 270px;
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-weight: bolder;
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.headerTxt span img {
+    width: 35px;
+    margin-left: 8px;
+    fill: white;
+}
+
+.headerTxt span{
+    border-radius: 50%;
+}
+
+div#view-source-frame{
+    border-radius: 15px;
+}
+
+div#barra{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+div#botoes{
+    width: 215px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgb(183, 0, 255);
+    border-radius: 5px;
+    width: 67px;
+    border-style: none;
+}
+
+button:hover{
+    background-color: rgb(160, 0, 223);;
+}
+
+iframe {
+    border-bottom-right-radius: 15px; 
+    border-bottom-left-radius: 15px;
+    border-top: 5px solid rgb(183, 0, 255);
+    margin: 0;
+    padding: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
